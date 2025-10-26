@@ -1,18 +1,32 @@
 @startuml
-title Теплый дом Context diagram
+title Банк Стандарт Context diagram
 
 top to bottom direction
+!include ./lib/C4_Context.puml
 
-!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Component.puml
+Person(ClientNoneAuth, "Незарегистрированный клиент" )
+Person(Client, "Клиент банка" )
 
-Person(user, "Пользователь", "Управляет отоплением" )
-Person(admin, "Инженер", "Настраивает систему отопления")
-System(WarmHouseSystem, "Теплый дом", "Система удаленного управления теплым домом")
+System_Ext(SmsGateway, "СМС шлюз телеком оператора")
+System_Ext(CallCentreOut, "Партнерский Кол-центр")
 
-System_Ext(sensors, "Система отопления", "Управляет датчиками отопления")
+System_Boundary(BankStandard, "Банк Стандарт") {
+    System(Site, "Сайт", "Информация, заявки")
+    System(InternetBank, "Интернет-банк", "Управление счетами клиента")
+    SystemDb(DBMS_IB, "MS SQL", "СУБД")
+    System(ABS, "Автоматизированная банковская система", "Операционные процессы")
+    System(CallCentre, "Внутренний Кол-центр")
+    SystemDb(DBMS_ABS, "Oracle", "СУБД")
+}
 
-Rel(user, WarmHouseSystem, "Управление")
-Rel(admin, WarmHouseSystem,"Настройка")
-Rel(WarmHouseSystem, sensors, "Управляет датчиками")
-
+Rel(ClientNoneAuth, Site, "Заявки, получение информации")
+Rel(Client, InternetBank, "Управление счетами")
+Rel(Site, ABS, "Заявки")
+Rel(InternetBank, ABS, "Управление счетами")
+Rel(InternetBank, DBMS_IB, "Данные")
+Rel(ABS, DBMS_ABS, "Данные")
+Rel(CallCentre, ABS, "Обработка заявок")
+Rel(CallCentre, SmsGateway, "Обработка заявок")
+Rel(CallCentreOut, ABS, "Обработка заявок")
+Rel(ABS, SmsGateway, "Отправка уведомлений")
 @enduml
