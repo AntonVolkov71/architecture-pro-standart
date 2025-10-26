@@ -17,20 +17,18 @@
   - [ADR_open_deposit.md](Task3/ADR_open_deposit.md)
 
 - Диаграмма контекста
-  - [Context.puml](Task3/Context.puml)
-  
+  - ![Context-__Context_diagram.png](Task3/Context-__Context_diagram.png)
 - Диаграмма контейнера
-  - [Container.plantuml](Task3/Container.plantuml)
-
+  - ![Container-__Container_diagram.png](Task3/Container-__Container_diagram.png)
+  
 ## Task 4
 - ADR рассылка ставок
   - [ADR_shared_bets.md](Task4/ADR_shared_bets.md)
   
 - Диаграмма контекста
-  - [Context.puml](Task4/Context.puml)
-  
+  - ![Context-__Context_diagram.png](Task4/Context-__Context_diagram.png)
 - Диаграмма контейнера
-  - [Context.puml](Task4/Context.puml)
+  - ![Container-__Container_diagram.png](Task4/Container-__Container_diagram.png)
 
 - Задачи
   - депозиты
@@ -43,4 +41,10 @@
   - ![RoadMap_bank_Standart-Roadmap_change.jpg](Task4/RoadMap_bank_Standart-Roadmap_change.jpg)
 
 ## Task 5
-- 
+- ADR заявка кредита
+  - [ADR_apply_credit.md](Task5/ADR_apply_credit.md)
+
+- Диаграмма контекста
+  - ![Context-__Context_diagram.png](Task5/Context-__Context_diagram.png)
+- Диаграмма контейнера
+  - ![Container-__Container_diagram.png](Task5/Container-__Container_diagram.png)
