@@ -35,6 +35,9 @@
         <mxCell id="xfV6yrht6huiolRnPKeo-9" value="&lt;div style=&quot;text-align: left;&quot;&gt;T4 - Сервис Управление АБС&amp;nbsp;&lt;/div&gt;" style="shape=rect;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=18;html=1;whiteSpace=wrap;align=center;verticalAlign=top;spacing=5;rounded=0;" vertex="1" parent="3D7FDG2aXA9G618_Kong-1">
           <mxGeometry x="-2180" y="-1040" width="600" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="4sVqZ0biJTIZoDIBI5MD-0" value="2026" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=80;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;" vertex="1" parent="3D7FDG2aXA9G618_Kong-1">
+          <mxGeometry x="-2590" y="-1720" width="1260" height="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -69,6 +72,9 @@
         </mxCell>
         <mxCell id="AolfZ8gJSfrhEwoyWRJJ-5" value="Q2" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=80;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;" vertex="1" parent="1">
           <mxGeometry x="-2120" y="-1230" width="520" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="UqXiaKKEt7nwDyr0dtEy-1" value="2026" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=80;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;" vertex="1" parent="1">
+          <mxGeometry x="-2500" y="-1310" width="900" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
