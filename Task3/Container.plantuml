@@ -23,6 +23,7 @@ Container_Boundary(BankStandard, "Банк Стандарт"){
 
     Container(ManagementService, "Управление АБС", "Java", "Временно, вместо шины данных")
     Container(DepositService, "Сервис депозитов", "Java", "Операции по депозитам")
+    Container(SendingService, "Сервис рассылок", "Java", "Рассылка уведомлений и др. по СМС, email и др.")
 
     Container(ABS_Client, "Десктопный клиент АБС", "Delphi", "Управление обслуживанием депозитов")
     Container(ABS, "Автоматизированная банковская система", "Oracle", "Операционные процессы")
@@ -41,9 +42,10 @@ Rel(ProxyService, BFF_IB_WEB, "API REST/Async")
 Rel(BFF_IB_WEB, ManagementService, "API REST/Async")
 Rel(ManagementService, ABS, "Управление АБС")
 Rel(ManagementService, DepositService, "Управление АБС")
+Rel(ManagementService, SendingService, "Рассылка уведомлений")
 
 Rel(CallCentre, ManagementService, "Обработка заявок")
-
+Rel(SendingService, SmsGateway, "Рассылка по СМС")
 
 Rel(FrontManger, ABS_Client, "Управление заявками")
 Rel(BackManger, ABS_Client, "Управление счетами")
